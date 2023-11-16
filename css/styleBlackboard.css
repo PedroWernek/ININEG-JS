@@ -1,0 +1,333 @@
+
+        *{
+            margin:0;
+            padding:0;
+        }
+
+
+        img{
+            width: 200px;
+        }
+
+        nav.menu-lateral{
+            z-index: 3;
+            overflow-y: scroll;
+            overflow: hidden;
+            width: 100px;
+            transition: .4s;
+            
+            
+        }
+
+        .btn-expandir > .ico{
+            background: url("../Img/cruseiro\ do\ norte\ ico.png") no-repeat;
+            background-position: 1px;
+            display: flex;
+            background-size: 60px;
+            align-items: center;
+            padding: 47px;
+            font-size: 12px;
+            cursor:initial;
+            transition: .5s;
+            margin-left: 12px;
+         }
+
+        nav.menu-lateral:hover{
+            
+            overflow-y: scroll;
+            overflow-x: hidden;
+            width: 250px;
+
+            .txt_link{
+                
+                color:white;   
+                text-decoration: none;   
+                transition: 2s;            
+            }
+            .btn-expandir > .ico{
+                background: url("../Img/cruseiro\ do\ norte.png") no-repeat;
+                background-position: 1px;
+                display: flex;
+                background-size: 150px;
+                margin-left: 25px;
+                padding: 47px;
+                font-size: 12px;
+                cursor:initial;
+             }
+             
+        }
+
+    
+        
+
+        
+
+        body{
+            font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
+            display: flex;
+            height: 100vh;
+        } 
+
+        nav {
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background-color: black;
+            width: 1002px;
+            z-index: 2;
+            position: fixed;
+        }
+
+        nav li{
+            list-style: none;
+            padding: 30px;
+            width: 17;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            
+        }
+
+         li.item-menu{
+            transition: 400ms;
+            display: flex;
+        }
+
+         li.item-menu:hover {
+            margin-top: 9px;
+            text-decoration: none;
+            background-color: gray;
+            
+        }
+
+        li{
+            align-items: center;
+        }
+        li i{
+            color: white;
+            overflow: hidden;  
+            font-size: 20px;          
+            position: absolute;
+        }
+
+        li a {
+            text-decoration: none;
+            color:black;
+            position: absolute;
+        }
+        
+        .txt_link{
+            margin-left: 37px;
+            position: relative;
+
+        }
+
+        main {
+            margin-left: 100px;
+            height: 200vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            overflow-x: hidden;
+            overflow: hidden;
+        }
+
+        .fundo {
+            display: flex;
+            width: 112%;
+            height: 25vh;
+            background: url(../Img/37888785-fa43-4243-ae48-2a9ca2f35ff0_atmosphaerisches-gamer-zimmer.jpg);
+            background-size: cover;
+            background-position: center;
+            
+        }
+        div.text{
+            margin-left: 100px;
+            margin-top: 100px;
+            position: relative;
+            line-height: 2;
+        
+        }
+        table.idi1{
+            display: block;
+            margin-right: 200px;
+            border: 1px solid black;
+        }
+        table.idi2{
+            display: block;
+            border: 1px solid black;
+            margin-top: 10px;
+            margin-right: 200px;
+        }
+        h1.iav{
+            margin-bottom: 50px;
+        }
+        .fundo img{
+            z-index: 2;
+            width:220px;
+            height: 180px;
+            margin-top: 100px;
+            margin-left: 50px;
+            border-radius: 50%;
+        }
+
+        .conteudo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+
+        .container {
+            margin-top: 50px;
+            width: 70%;
+
+        }
+
+        .container-conteudo {
+            border: 1px solid rgb(78, 77, 77);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .container-foto {
+            border: 1px solid black;
+            width:60%;
+            height: 200px;
+        }
+
+        .container-foto1 {
+            background: url(../Img/carro.gif) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container-foto2 {
+            background: url(../Img/trabalho.png) no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .container-foto3 {
+            height:300px;
+        }
+        th{
+           text-align: right; 
+        }
+
+        
+        .linhaT{
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            box-shadow: 0 0 8px 8px white inset;
+        }
+
+       .conteudo{
+        margin-top: 100px;
+        width: 100;
+        height:100;    
+        margin-bottom: 90;
+       }
+
+        .placa{
+        position: absolute;
+        z-index: 2;
+        right: 1000px;
+        top: 700px;
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        
+}
+       @keyframes slidein {
+        from {
+          top: 650px;
+          transform: rotate(-15deg);
+        -webkit-transform: rotate(-15deg);
+        -moz-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+        -o-transform: rotate(-15deg);
+        }
+      
+        to {
+          top:600px;
+          transform: rotate(-10deg);
+          -webkit-transform: rotate(-10deg);
+          -moz-transform: rotate(-10deg);
+          -ms-transform: rotate(-10deg);
+          -o-transform: rotate(-10deg);
+}
+        
+       }
+       p.p1{
+        margin-bottom: 30px;
+        margin-top:50px;
+       }
+       p.p2{
+        margin-bottom: 7px;
+       }
+
+     table.t1{
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        border-left: solid red 15px;
+}
+     table.t2{
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-left: solid blue 15px;
+}
+     table.t3{
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        border-left: solid violet 15px;
+}
+     table.t4{
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border-left: solid yellow 15px;
+     }
+     table.t5{
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border-left: solid green 15px;
+     }
+     table.t6{
+        display: block;
+        border: 1px solid black;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border-left: solid cornflowerblue 15px;
+     }
+
+     video{
+        margin-left: 20px ;
+        width: 535px;
+        height: 300px;
+        position: relative;
+     }

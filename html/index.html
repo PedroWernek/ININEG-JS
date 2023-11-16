@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aluno da Area</title>
+    <link rel="stylesheet" href="../css/styleLogin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Martian+Mono&family=Oswald&family=Poppins:wght@400;500;600;800&family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+        
+        </div>
+    </header>
+    <main>
+        
+    <div id="robo">
+        <section><p onclick="remover()">X</p></section>
+        <div id="foto-robo">
+            <h2>Confirme que você não é um robô:</h2>
+            <img src="../Img/robo.jpg" alt="robo">
+            <input type="checkbox">
+        </div>
+    </div>
+    <form method="post" action="#">
+        
+        <div class="login">
+             
+            <input type="number" id="rgm" placeholder="RGM">
+            <div id="rgmDiv"></div>
+            <input type="name" id="senha" placeholder="Senha">
+            <div id="senhaDiv"></div>   
+        </div>
+        <div class="captcha">
+            <p>Não sou um robô:</p>
+            <input type="checkbox" id="captcha">
+        </div>
+        <nav class="submit">
+            <a class=input value="Ambiente Virtual"  id="ambiente-virtual" >Ambiente Virtual</a>
+            <a class=input value="Area do Aluno">Area do Aluno</a>
+        </nav>
+    </form>
+    </main>
+    <nav>
+        <p onclick="navp1()">esqueceu ou deseja efetuar o reset da sua senha?</p>
+        <p onclick="navp2()">esqueceu o seu RGM?</p>
+    </nav>
+
+    <footer>
+        <div class="footer">
+            
+        </div>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+</html>
